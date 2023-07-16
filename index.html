@@ -1,39 +1,72 @@
+
 <!DOCTYPE html>
+
 <html lang="en">
+
   <head>
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sushiman</title>
     <link rel="shortcut icon" href="./public/sushi-ico.png" type="image/png" />
     <link rel="stylesheet" href="./css/styles.css" />
+    
   </head>
-  <body>
-    <header>
-      <!-- header block -->
-      <nav class="header__nav container" id="menu">
-        <div class="header__logo">
-          <h4>SUSHIMAN</h4>
-        </div>
-        <div class="header__menu">
-          <li>
-            <a href="#menu">MENU</a>
-          </li>
-          <li>
-            <a href="#food">FOOD</a>
-          </li>
-          <li>
-            <a href="#service">SERVICE</a>
-          </li>
-          <li>
-            <a href="#about-us">ABOUT US</a>
-          </li>
-        </div>
-      </nav>
-      <!-- heder block -->
-    </header>
 
-    <section class="hero container">
-      <div class="hero__left">
+  <body>
+
+         <header>
+            <!-- header block -->
+            <nav class="mobile-header">
+            <div class="mobile-header__container">
+              <div class="mobile-header__logo">
+                <h4>SUSHIMAN</h4>
+                <div><img src="./assets/menu.svg" alt="menu_icon" /></div>
+              </div>
+
+            
+            </div>
+            <div class="mobile-header__menu">
+              <li>
+                <a href="#menu">MENU</a>
+              </li>
+              <li>
+                <a href="#food">FOOD</a>
+              </li>
+              <li>
+                <a href="#service">SERVICE</a>
+              </li>
+              <li>
+                <a href="#about-us">ABOUT US</a>
+              </li>
+            </div>
+            </nav>
+
+
+            <nav class="header__nav container" id="menu">
+            <div class="header__logo">
+              <h4>SUSHIMAN</h4>
+            </div>
+            <div class="header__menu">
+              <li>
+                <a href="#menu">MENU</a>
+              </li>
+              <li>
+                <a href="#food">FOOD</a>
+              </li>
+              <li>
+                <a href="#service">SERVICE</a>
+              </li>
+              <li>
+                <a href="#about-us">ABOUT US</a>
+              </li>
+            </div>
+            </nav>
+            <!-- heder block -->
+         </header>
+
+         <section class="hero container">
+        <div class="hero__left">
         <div class="hero__left--img">
           <img src="./assets/sushi-1.png" alt="hero_img" />
           <h2>
@@ -76,302 +109,299 @@
           </div>
         </div>
       </div>
-    </section>
+         </section>
 
-    <section class="section_one container" id="about-us">
-      <div class="section-one__left">
-        <div class="section-one__img">
-          <img src="./assets/sushi-3.png" alt="sushi-3" />
-          <div class="section-one__img--overlay">
-            <img src="./assets/about_bg1.png" alt="sushi-3-overlay" />
-          </div>
-        </div>
+            <!-- 
+              <section class="section_one container" id="about-us">
+                <div class="section-one__left">
+                  <div class="section-one__img">
+                    <img src="./assets/sushi-3.png" alt="sushi-3" />
+                    <div class="section-one__img--overlay">
+                      <img src="./assets/about_bg1.png" alt="sushi-3-overlay" />
+                    </div>
+                  </div>
 
-        <div class="section-one__button">
-          Learn More
-          <img src="./assets/arrow-up-right.svg" alt="learn_more" />
-        </div>
+                  <div class="section-one__button">
+                    Learn More
+                    <img src="./assets/arrow-up-right.svg" alt="learn_more" />
+                  </div>
 
-        <div class="section-one__img">
-          <img src="./assets/sushi-2.png" alt="sushi-3" />
-          <div class="section-one__img--overlay">
-            <img src="./assets/about_bg2.png" alt="sushi-3-overlay" />
-          </div>
-        </div>
-      </div>
-      <div class="section-one__right">
-        <div class="section-one__right--content">
-          <h2>About Us / 私たちに関しては</h2>
-          <h1>Our mission is to bring true Japanese flavours to you.</h1>
-          <p>
-            We will continue to provide the experience of Omotenashi, the
-            Japanese mindset of hospitality, with our shopping and dining for
-            our customers.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <section class="section-two container" id="food">
-      <div class="section-two__img-overlay">
-        <img src="./assets/popular_bg.png" alt="popular_bg" />
-      </div>
-
-      <div class="section-two__contents">
-        <h1 class="section-two__heading">Popular Food / 人気</h1>
-        <div class="section-two__chips" id="chips-root">
-          <!-- <div class="section-two__chips--unit">
-            <img src="./assets/sushi-9.png" alt="sushi-ico">
-            Sushi
-          </div> -->
-        </div>
-        <div class="section-two__cards" id="cards-root">
-          <div class="section-two__cards--unit">
-            <div class="section-two__cards--header">
-              <img src="./assets/sushi-12.png" alt="" />
-              <h2>Chezu Sushi</h2>
-            </div>
-            <div class="section-two__cards--ratings">
-              <div><img src="./assets/star.svg" alt="star_icon" /> 4.9</div>
-              <div>$45.00</div>
-            </div>
-          </div>
-
-          <div class="section-two__cards--unit selected-unit">
-            <div class="section-two__cards--header">
-              <img class="selected-img" src="./assets/sushi-11.png" alt="" />
-              <h2 class="selected-header">Original Sushi</h2>
-            </div>
-            <div class="section-two__cards--ratings">
-              <div class="selected-ratings">
-                <img src="./assets/star.svg" alt="star_icon" /> 4.9
-              </div>
-              <div class="selected-price">$45.00</div>
-            </div>
-          </div>
-
-          <div class="section-two__cards--unit">
-            <div class="section-two__cards--header">
-              <img src="./assets/sushi-10.png" alt="" />
-              <h2>Ramen Legendo</h2>
-            </div>
-            <div class="section-two__cards--ratings">
-              <div><img src="./assets/star.svg" alt="star_icon" /> 4.7</div>
-              <div>$25.00</div>
-            </div>
-          </div>
-        </div>
-        <div class="section-two__button">
-          Explore Food
-          <img src="./assets/arrow-right.svg" alt="right_arrow" />
-        </div>
-      </div>
-    </section>
-
-    <section class="section-three container" id="section-three">
-      <div class="section-three__row">
-        <div class="section-three__row-one--left">
-          <h3 class="section-three__row-one--left-heading">
-            What’s Trending / トレンド
-          </h3>
-          <h1>Japanese Sushi</h1>
-          <h4>Feel the taste of the most delicious Sushi here.</h4>
-          <div class="section-three__list-container">
-            <ul class="section-three__list">
-              <li class="section-three__list--list-item">
-                <div class="section-three__list--icon">
-                  <img src="./assets/check.svg" alt="check" />
+                  <div class="section-one__img">
+                    <img src="./assets/sushi-2.png" alt="sushi-3" />
+                    <div class="section-one__img--overlay">
+                      <img src="./assets/about_bg2.png" alt="sushi-3-overlay" />
+                    </div>
+                  </div>
                 </div>
-                Make Sushi
-              </li>
-              <li class="section-three__list--list-item">
-                <div class="section-three__list--icon">
-                  <img src="./assets/check.svg" alt="check" />
+                <div class="section-one__right">
+                  <div class="section-one__right--content">
+                    <h2>About Us / 私たちに関しては</h2>
+                    <h1>Our mission is to bring true Japanese flavours to you.</h1>
+                    <p>
+                      We will continue to provide the experience of Omotenashi, the
+                      Japanese mindset of hospitality, with our shopping and dining for
+                      our customers.
+                    </p>
+                  </div>
                 </div>
-                Uramaki Sushi
-              </li>
-              <li class="section-three__list--list-item">
-                <div class="section-three__list--icon">
-                  <img src="./assets/check.svg" alt="check" />
+              </section> -->
+            <!-- <section class="section-two container" id="food">
+                <div class="section-two__img-overlay">
+                  <img src="./assets/popular_bg.png" alt="popular_bg" />
                 </div>
-                Temaki Sushi
-              </li>
-            </ul>
 
-            <ul class="section-three__list">
-              <li class="section-three__list--list-item">
-                <div class="section-three__list--icon">
-                  <img src="./assets/check.svg" alt="check" />
-                </div>
-                Oshizushi
-              </li>
-              <li class="section-three__list--list-item">
-                <div class="section-three__list--icon">
-                  <img src="./assets/check.svg" alt="check" />
-                </div>
-                Nigiri Sushi
-              </li>
-              <li class="section-three__list--list-item">
-                <div class="section-three__list--icon">
-                  <img src="./assets/check.svg" alt="check" />
-                </div>
-                Inari Sushi
-              </li>
-            </ul>
-          </div>
-        </div>
+                <div class="section-two__contents">
+                  <h1 class="section-two__heading">Popular Food / 人気</h1>
+                  <div class="section-two__chips" id="chips-root"></div>
+                  <div class="section-two__cards" id="cards-root">
+                    <div class="section-two__cards--unit">
+                      <div class="section-two__cards--header">
+                        <img src="./assets/sushi-12.png" alt="" />
+                        <h2>Chezu Sushi</h2>
+                      </div>
+                      <div class="section-two__cards--ratings">
+                        <div><img src="./assets/star.svg" alt="star_icon" /> 4.9</div>
+                        <div>$45.00</div>
+                      </div>
+                    </div>
 
-        <div class="section-three__arrows-vertical top">
-          <div>
-            <img src="./assets/arrow-vertical.svg" alt="arrow-vertical-top" />
-          </div>
-        </div>
-        <div class="section-three__row-one--right">
-          <div class="section-three__image-overlay">
-            <img
-              class="section-three__image-overlay--bg"
-              src="./assets/japanese_sushi.png"
-              alt="bg_sushi"
-            />
-            <img
-              class="section-three__image-overlay--item"
-              src="./assets/sushi-5.png"
-              alt=""
-            />
-          </div>
-        </div>
-      </div>
-      <div class="section-three__arrows-horizontal">
-        <div>
-          <div>
-            <img
-              src="./assets/arrow-horizontal.svg"
-              alt="arrow-horizontal-left"
-            />
-            <img
-              src="./assets/arrow-horizontal.svg"
-              alt="arrow-horizontal-right"
-            />
-          </div>
-        </div>
-      </div>
-      <div class="section-three__circle-container">
-        <div><div>Discover</div></div>
-      </div>
-      <div class="section-three__row">
-        <div class="section-three__row-one--right">
-          <div class="section-three__image-overlay">
-            <img
-              class="section-three__image-overlay--bg"
-              src="./assets/japanese_sushi.png"
-              alt="bg_sushi"
-            />
-            <img
-              class="section-three__image-overlay--item"
-              src="./assets/sushi-4.png"
-              alt=""
-            />
-          </div>
-        </div>
-        <div class="section-three__arrows-vertical bottom">
-          <div>
-            <img src="./assets/arrow-vertical.svg" alt="arrow-vertical-top" />
-          </div>
-        </div>
-        <div class="section-three__row-one--left">
-          <h3 class="section-three__row-one--left-heading">
-            What’s Trending / トレンド
-          </h3>
-          <h1>Japanese Drinks</h1>
-          <h4>Feel the taste of the most delicious Japense drinks here.</h4>
-          <div class="section-three__list-container">
-            <ul class="section-three__list">
-              <li class="section-three__list--list-item">
-                <div class="section-three__list--icon">
-                  <img src="./assets/check.svg" alt="check" />
-                </div>
-                Oruncha
-              </li>
-              <li class="section-three__list--list-item">
-                <div class="section-three__list--icon">
-                  <img src="./assets/check.svg" alt="check" />
-                </div>
-                Aojiru
-              </li>
-              <li class="section-three__list--list-item">
-                <div class="section-three__list--icon">
-                  <img src="./assets/check.svg" alt="check" />
-                </div>
-                Kombu-cha
-              </li>
-            </ul>
+                    <div class="section-two__cards--unit selected-unit">
+                      <div class="section-two__cards--header">
+                        <img class="selected-img" src="./assets/sushi-11.png" alt="" />
+                        <h2 class="selected-header">Original Sushi</h2>
+                      </div>
+                      <div class="section-two__cards--ratings">
+                        <div class="selected-ratings">
+                          <img src="./assets/star.svg" alt="star_icon" /> 4.9
+                        </div>
+                        <div class="selected-price">$45.00</div>
+                      </div>
+                    </div>
 
-            <ul class="section-three__list">
-              <li class="section-three__list--list-item">
-                <div class="section-three__list--icon">
-                  <img src="./assets/check.svg" alt="check" />
+                    <div class="section-two__cards--unit">
+                      <div class="section-two__cards--header">
+                        <img src="./assets/sushi-10.png" alt="" />
+                        <h2>Ramen Legendo</h2>
+                      </div>
+                      <div class="section-two__cards--ratings">
+                        <div><img src="./assets/star.svg" alt="star_icon" /> 4.7</div>
+                        <div>$25.00</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="section-two__button">
+                    Explore Food
+                    <img src="./assets/arrow-right.svg" alt="right_arrow" />
+                  </div>
                 </div>
-                Sakura Tea
-              </li>
-              <li class="section-three__list--list-item">
-                <div class="section-three__list--icon">
-                  <img src="./assets/check.svg" alt="check" />
+              </section> -->
+            <!-- <section class="section-three container" id="section-three">
+                <div class="section-three__row">
+                  <div class="section-three__row-one--left">
+                    <h3 class="section-three__row-one--left-heading">
+                      What’s Trending / トレンド
+                    </h3>
+                    <h1>Japanese Sushi</h1>
+                    <h4>Feel the taste of the most delicious Sushi here.</h4>
+                    <div class="section-three__list-container">
+                      <ul class="section-three__list">
+                        <li class="section-three__list--list-item">
+                          <div class="section-three__list--icon">
+                            <img src="./assets/check.svg" alt="check" />
+                          </div>
+                          Make Sushi
+                        </li>
+                        <li class="section-three__list--list-item">
+                          <div class="section-three__list--icon">
+                            <img src="./assets/check.svg" alt="check" />
+                          </div>
+                          Uramaki Sushi
+                        </li>
+                        <li class="section-three__list--list-item">
+                          <div class="section-three__list--icon">
+                            <img src="./assets/check.svg" alt="check" />
+                          </div>
+                          Temaki Sushi
+                        </li>
+                      </ul>
+
+                      <ul class="section-three__list">
+                        <li class="section-three__list--list-item">
+                          <div class="section-three__list--icon">
+                            <img src="./assets/check.svg" alt="check" />
+                          </div>
+                          Oshizushi
+                        </li>
+                        <li class="section-three__list--list-item">
+                          <div class="section-three__list--icon">
+                            <img src="./assets/check.svg" alt="check" />
+                          </div>
+                          Nigiri Sushi
+                        </li>
+                        <li class="section-three__list--list-item">
+                          <div class="section-three__list--icon">
+                            <img src="./assets/check.svg" alt="check" />
+                          </div>
+                          Inari Sushi
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="section-three__arrows-vertical top">
+                    <div>
+                      <img src="./assets/arrow-vertical.svg" alt="arrow-vertical-top" />
+                    </div>
+                  </div>
+                  <div class="section-three__row-one--right">
+                    <div class="section-three__image-overlay">
+                      <img
+                        class="section-three__image-overlay--bg"
+                        src="./assets/japanese_sushi.png"
+                        alt="bg_sushi"
+                      />
+                      <img
+                        class="section-three__image-overlay--item"
+                        src="./assets/sushi-5.png"
+                        alt=""
+                      />
+                    </div>
+                  </div>
                 </div>
-                Ofukucha
-              </li>
-              <li class="section-three__list--list-item">
-                <div class="section-three__list--icon">
-                  <img src="./assets/check.svg" alt="check" />
+                <div class="section-three__arrows-horizontal">
+                  <div>
+                    <div>
+                      <img
+                        src="./assets/arrow-horizontal.svg"
+                        alt="arrow-horizontal-left"
+                      />
+                      <img
+                        src="./assets/arrow-horizontal.svg"
+                        alt="arrow-horizontal-right"
+                      />
+                    </div>
+                  </div>
                 </div>
-                Mugicha
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
+                <div class="section-three__circle-container">
+                  <div><div>Discover</div></div>
+                </div>
+                <div class="section-three__row">
+                  <div class="section-three__row-one--right">
+                    <div class="section-three__image-overlay">
+                      <img
+                        class="section-three__image-overlay--bg"
+                        src="./assets/japanese_sushi.png"
+                        alt="bg_sushi"
+                      />
+                      <img
+                        class="section-three__image-overlay--item"
+                        src="./assets/sushi-4.png"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <div class="section-three__arrows-vertical bottom">
+                    <div>
+                      <img src="./assets/arrow-vertical.svg" alt="arrow-vertical-top" />
+                    </div>
+                  </div>
+                  <div class="section-three__row-one--left">
+                    <h3 class="section-three__row-one--left-heading">
+                      What’s Trending / トレンド
+                    </h3>
+                    <h1>Japanese Drinks</h1>
+                    <h4>Feel the taste of the most delicious Japense drinks here.</h4>
+                    <div class="section-three__list-container">
+                      <ul class="section-three__list">
+                        <li class="section-three__list--list-item">
+                          <div class="section-three__list--icon">
+                            <img src="./assets/check.svg" alt="check" />
+                          </div>
+                          Oruncha
+                        </li>
+                        <li class="section-three__list--list-item">
+                          <div class="section-three__list--icon">
+                            <img src="./assets/check.svg" alt="check" />
+                          </div>
+                          Aojiru
+                        </li>
+                        <li class="section-three__list--list-item">
+                          <div class="section-three__list--icon">
+                            <img src="./assets/check.svg" alt="check" />
+                          </div>
+                          Kombu-cha
+                        </li>
+                      </ul>
 
-    <section class="section-four container" id="service">
-      <h1>Get offers stright to your inbox</h1>
-      <p>Sign up for the Sushiman newsletter</p>
+                      <ul class="section-three__list">
+                        <li class="section-three__list--list-item">
+                          <div class="section-three__list--icon">
+                            <img src="./assets/check.svg" alt="check" />
+                          </div>
+                          Sakura Tea
+                        </li>
+                        <li class="section-three__list--list-item">
+                          <div class="section-three__list--icon">
+                            <img src="./assets/check.svg" alt="check" />
+                          </div>
+                          Ofukucha
+                        </li>
+                        <li class="section-three__list--list-item">
+                          <div class="section-three__list--icon">
+                            <img src="./assets/check.svg" alt="check" />
+                          </div>
+                          Mugicha
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </section> -->
+            <!-- <section class="section-four container" id="service">
+                <h1>Get offers stright to your inbox</h1>
+                <p>Sign up for the Sushiman newsletter</p>
 
-      <div class="section-four__search">
-        <input type="text" placeholder="Enter your email address" />
-        <div>Get Started</div>
-      </div>
-    </section>
+                <div class="section-four__search">
+                  <input type="text" placeholder="Enter your email address" />
+                  <div>Get Started</div>
+                </div>
+              </section> -->
+            <!-- <section class="section-five container" id="section-five">
 
-    <section class="section-five container" id="section-five">
-      <div class="section-five__footer-logo"><span>Sushi</span>man</div>
-      <div class="section-five__footer-menu">
-        <li>
-          <a href="#menu">MENU</a>
-        </li>
-        <li>
-          <a href="#food">FOOD</a>
-        </li>
-        <li>
-          <a href="#service">SERVICE</a>
-        </li>
-        <li>
-          <a href="#about-us">ABOUT US</a>
-        </li>
-      </div>
-      <div class="section-five__footer-social">
-        <div>
-          <img src="./assets/facebook.svg" alt="facebook" />
-        </div>
+          
+                <div class="section-five__footer-logo"><span>Sushi</span>man</div>
+                <div class="section-five__footer-menu">
+                  <li>
+                    <a href="#menu">MENU</a>
+                  </li>
+                  <li>
+                    <a href="#food">FOOD</a>
+                  </li>
+                  <li>
+                    <a href="#service">SERVICE</a>
+                  </li>
+                  <li>
+                    <a href="#about-us">ABOUT US</a>
+                  </li>
+                </div>
+                <div class="section-five__footer-social">
+                  <div>
+                    <img src="./assets/facebook.svg" alt="facebook" />
+                  </div>
 
-        <div>
-          <img src="./assets/instagram.svg" alt="instagram" />
-        </div>
+                  <div>
+                    <img src="./assets/instagram.svg" alt="instagram" />
+                  </div>
 
-        <div>
-          <img src="./assets/twitter.svg" alt="twitter" />
-        </div>
-      </div>
-    </section>
+                  <div>
+                    <img src="./assets/twitter.svg" alt="twitter" />
+                  </div>
+                </div>
+              </section> -->
+
+
   </body>
-
   <script type="module" src="./js/main.js"></script>
+
 </html>
+
