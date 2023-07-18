@@ -10,6 +10,7 @@
 @import url('../css/two/section-two.css');
 @import url('../css/three/section-three.css');
 @import url('../css/four/section-four.css');
+@import url('../css/footer/footer.css');
 
 :root {
     /* font family descriptions */
@@ -39,6 +40,8 @@
 
 body{
     background-color: var(--color-creamson);
+    padding: 0px;
+    margin: 0px;
 }
 
 
