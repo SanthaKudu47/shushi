@@ -36,8 +36,11 @@
     color: white;
 }
 
+.mobile-header__logo div img {
+  cursor: pointer;
+}
+
 .mobile-header__menu {
-    display: none;
     background-color: var(--color-creamson)
 }
 

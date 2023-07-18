@@ -1,4 +1,5 @@
 import { chip } from "./chips.js";
+import { enableMobileNav } from "./mobileNav.js";
 console.log("456554");
 
 //generate chips
@@ -18,3 +19,6 @@ if (root) {
     root.append(chip(data.src, data.title));
   });
 }
+
+
+enableMobileNav();
