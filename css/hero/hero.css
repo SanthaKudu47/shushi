@@ -120,6 +120,7 @@
     padding-left: 10px;
     padding-right: 10px;
 
+
 }
 
 .hero__right--banner-right {
@@ -241,6 +242,7 @@
         padding: 40px;
         justify-content: center;
         height: 100%;
+
     }
 
     .hero__right--content h1 {
@@ -288,6 +290,19 @@
         padding-bottom: 20px;
         padding-left: 10px;
         padding-right: 10px;
+        margin-bottom: -120px;
+        opacity: 0;
+        transition: margin-bottom 0.7s, opacity 0.7s;
+    }
+
+    .animate__active {
+        margin-bottom: 0px;
+        opacity: 1;
+    }
+
+    .animate__inactive {
+        margin-bottom: -120px;
+        opacity: 0;
 
     }
 

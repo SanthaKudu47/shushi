@@ -2,6 +2,8 @@
 
 .header__nav {
     display: none;
+
+
 }
 
 .mobile-header {
@@ -10,7 +12,7 @@
     position: fixed;
     top: 0px;
     width: 100%;
-    z-index:10;
+    z-index: 10;
 }
 
 .mobile-header__container {
@@ -37,7 +39,7 @@
 }
 
 .mobile-header__logo div img {
-  cursor: pointer;
+    cursor: pointer;
 }
 
 .mobile-header__menu {
@@ -73,6 +75,9 @@
         height: 60px;
         z-index: 5;
         position: relative;
+
+
+
     }
 
     .header__logo {
@@ -82,6 +87,11 @@
         background-color: var(--primary-color);
         font-size: 24px;
         font-weight: 700;
+        position: relative;
+        transition: margin-top 1s;
+        margin-top: -100px;
+        visibility: hidden;
+
     }
 
     .header__menu {
@@ -92,6 +102,10 @@
         display: flex;
         align-items: center;
         justify-content: space-around;
+        margin-top: -100px;
+        transition: margin-top 1s;
+        visibility: hidden;
+
     }
 
     .header__menu li {
