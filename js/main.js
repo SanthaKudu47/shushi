@@ -1,3 +1,4 @@
+import { animateHeader } from "./animations.js";
 import { chip } from "./chips.js";
 import { enableMobileNav } from "./mobileNav.js";
 console.log("456554");
@@ -22,3 +23,4 @@ if (root) {
 
 
 enableMobileNav();
+animateHeader();
