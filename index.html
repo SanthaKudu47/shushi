@@ -16,7 +16,7 @@
         <div class="mobile-header__container">
           <div class="mobile-header__logo">
             <h4>SUSHIMAN</h4>
-            <div  id="menu"><img src="./assets/menu.svg" alt="menu_icon" /></div>
+            <div id="menu"><img src="./assets/menu.svg" alt="menu_icon" /></div>
           </div>
         </div>
         <div id="drop-down" class="mobile-header__menu">
@@ -105,8 +105,13 @@
 
     <section class="section_one container" id="about-us">
       <div class="section-one__left">
-        <div class="section-one__img">
-          <img src="./assets/sushi-3.png" alt="sushi-3" />
+        <div class="section-one__img" id="section-one-image-one-container">
+          <img
+            src="./assets/sushi-3.png"
+            alt="sushi-3"
+            id="section-one-image-one"
+            class="animation-idle"
+          />
           <div class="section-one__img--overlay">
             <img src="./assets/about_bg1.png" alt="sushi-3-overlay" />
           </div>
@@ -117,16 +122,21 @@
           <img src="./assets/arrow-up-right.svg" alt="learn_more" />
         </div>
 
-        <div class="section-one__img">
-          <img src="./assets/sushi-2.png" alt="sushi-3" />
+        <div class="section-one__img" id="section-one-image-two-container">
+          <img
+            src="./assets/sushi-2.png"
+            alt="sushi-3"
+            id="section-one-image-two"
+            class="animation-idle"
+          />
           <div class="section-one__img--overlay">
             <img src="./assets/about_bg2.png" alt="sushi-3-overlay" />
           </div>
         </div>
       </div>
       <div class="section-one__right">
-        <div class="section-one__right--content">
-          <h2>About Us / 私たちに関しては</h2>
+        <div class="section-one__right--content content-idle" id="section-one-right-content">
+          <h2 id="section-one-right-title">About Us / 私たちに関しては</h2>
           <h1>Our mission is to bring true Japanese flavours to you.</h1>
           <p>
             We will continue to provide the experience of Omotenashi, the

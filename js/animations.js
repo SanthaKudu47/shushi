@@ -1,4 +1,9 @@
 let bannerAnimated = false;
+const sectionOneImagesAnimated = {
+  image1: false,
+  image2: false,
+};
+let sectionOneContentAnimated = false;
 
 function animateHeader() {
   const header = document.querySelector(".header__nav");
@@ -18,22 +23,48 @@ function animateHeader() {
 
 function animateHeaderBanner(scrollPosition = { y: 0, x: 0 }) {
   const banner = document.querySelector(".hero__right--banner");
-  const classes = banner.classList;
-  console.log(classes);
 
   if (banner) {
     if (window.innerHeight - scrollPosition.y === window.innerHeight) {
-      console.log("revert animation");
       bannerAnimated = false;
       banner.classList.remove("animate__active");
     } else {
-      if (bannerAnimated) {
-        console.log("already done");
-      } else {
+      if (!bannerAnimated) {
         bannerAnimated = true;
         banner.classList.add("animate__active");
-        console.log("play for once");
       }
+    }
+  }
+}
+
+function animateSectionOneImage(
+  imageElementId,
+  containerId,
+  indexName = "image1"
+) {
+  const container = document.getElementById(imageElementId);
+  const image = document.getElementById(containerId);
+
+  if (image && container) {
+    if (container.getBoundingClientRect().y <= window.innerHeight / 2) {
+      sectionOneImagesAnimated[indexName] = true;
+      image.classList.add("animation-active");
+    } else {
+      sectionOneImagesAnimated[indexName] = false;
+      image.classList.remove("animation-active");
+    }
+  }
+}
+
+function animateSectionOneTextContent() {
+  const container = document.getElementById("section-one-right-content");
+  if (container) {
+    if (container.getBoundingClientRect().y <= window.innerHeight / 2) {
+      sectionOneContentAnimated = true;
+      container.classList.add("content-animate");
+    } else {
+      sectionOneContentAnimated = false;
+      container.classList.remove("content-animate");
     }
   }
 }
@@ -57,6 +88,17 @@ class ScrollPositionDetector {
 
 function animateExecutor(scrollPosition = { y: 0, x: 0 }) {
   animateHeaderBanner(scrollPosition);
+  animateSectionOneImage(
+    "section-one-image-one-container",
+    "section-one-image-one",
+    "image1"
+  );
+  animateSectionOneImage(
+    "section-one-image-two-container",
+    "section-one-image-two",
+    "image2"
+  );
+  animateSectionOneTextContent();
 }
 
 ScrollPositionDetector.addScrollListener();

@@ -30,11 +30,10 @@
     font-size: 60px;
     line-height: 85px;
     color: #fff;
+    bottom: 550px;
 }
 
-.hero__left--img h2 {
-    top: 100px;
-}
+
 
 .hero__right--buttons {
     margin-left: 5px;
@@ -192,23 +191,29 @@
 
     }
 
+    .hero__left--img {
+        position: relative;
+    }
+
     .hero__left--img img {
         margin-top: 40px;
         width: 120%;
         height: 100%;
         object-fit: contain;
 
+
+
     }
 
     .hero__left--img h2 {
         position: absolute;
-        bottom: 0;
-        padding: 20px;
+        color: #fff;
         font-family: var(--playfair-display);
         font-weight: 700;
         font-size: 120px;
         line-height: 138px;
-        color: #fff;
+        bottom: 0px;
+
     }
 
 
