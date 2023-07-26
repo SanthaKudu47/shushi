@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: column-reverse;
 }
+
 .section-one__left {
     display: flex;
     flex: 1;
@@ -10,6 +11,7 @@
     gap: 10px;
     justify-content: center;
 }
+
 .section-one__img {
     background-color: white;
     display: flex;
@@ -18,6 +20,7 @@
     align-items: center;
     padding: 50px;
 }
+
 .section-one__img img {
     height: 120px;
     width: 145px;
@@ -25,11 +28,13 @@
     object-fit: fill;
     z-index: 3
 }
+
 .section-one__img--overlay img {
     object-fit: contain;
     width: 100%;
     height: 100%;
 }
+
 .section-one__button {
     position: absolute;
     background-color: black;
@@ -53,6 +58,7 @@
     padding-left: 20px;
     padding-right: 20px;
 }
+
 .section-one__right {
     display: flex;
     flex: 1.2;
@@ -60,12 +66,14 @@
     padding-bottom: 25px;
     --paddingOfTextContent: 65px;
 }
+
 .section-one__right--content {
     display: flex;
     flex-direction: column;
     justify-content: center;
 
 }
+
 .section-one__right h2 {
     font-size: 18px;
     font-weight: 400;
@@ -74,6 +82,7 @@
     opacity: .8;
     text-align: center;
 }
+
 .section-one__right h1 {
     font-size: 45px;
     font-weight: 600;
@@ -101,7 +110,7 @@
 
     .section_one {
         flex-direction: row;
-        
+
     }
 
     .section-one__left {
@@ -120,30 +129,44 @@
         width: 100%;
         align-items: center;
         padding: 50px;
+
     }
 
-    .section-one__img img {
+    .section-one__img> :first-child {
         height: 200px;
         width: 225px;
         position: relative;
         object-fit: fill;
-        z-index: 3
+        z-index: 3;
+        transition: margin-left 1.0s, opacity 1s;
+
+    }
+
+    .animation-idle {
+        margin-left: -300px;
+        opacity: 0;
+    }
+
+    .animation-active {
+        margin-left: 50px;
+        opacity: 1;
+
     }
 
     .section-one__img--overlay {
         position: absolute;
-        left: 0px;
+        left: 100px;
         right: 0px;
         bottom: 0px;
         top: 0px;
-        width: 100%;
         z-index: 1;
-        
+
+
     }
 
     .section-one__img--overlay img {
-       width: 100%;
-       height: 100%;
+        width: 100%;
+        height: 100%;
 
 
     }
@@ -188,6 +211,9 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+        position: relative;
+        transition: left 1s, opacity 1s;
+
 
     }
 
@@ -200,6 +226,16 @@
         padding-left: var(--paddingOfTextContent);
 
 
+    }
+
+    .content-idle {
+        left: 500px;
+        opacity: 0;
+    }
+
+    .content-animate {
+        left: 0px;
+        opacity: 1;
     }
 
     .section-one__right h1 {
@@ -226,5 +262,5 @@
 
 
     }
-   
+
 }
